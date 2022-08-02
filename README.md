@@ -1,2 +1,3 @@
-# jadx
-JADX packaged for AttifyOS
+# JADX
+
+ Dex to Java decompiler
