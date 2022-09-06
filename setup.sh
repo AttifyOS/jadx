@@ -37,7 +37,7 @@ install() {
   echo "#!/usr/bin/env sh" > $APM_PKG_BIN_DIR/jadx-gui
   echo "export PATH=$APM_PKG_INSTALL_DIR/jdk-18.0.2+9-jre/bin/:\$PATH" >> $APM_PKG_BIN_DIR/jadx-gui
   echo "export JAVA_HOME=$APM_PKG_INSTALL_DIR/jdk-18.0.2+9-jre/" >> $APM_PKG_BIN_DIR/jadx-gui
-  echo "$APM_PKG_INSTALL_DIR/jadx/bin/jadx-gui" >> $APM_PKG_BIN_DIR/jadx-gui
+  echo "$APM_PKG_INSTALL_DIR/jadx/bin/jadx-gui \"\$@\"" >> $APM_PKG_BIN_DIR/jadx-gui
   chmod +x $APM_PKG_BIN_DIR/jadx-gui
 }
 
