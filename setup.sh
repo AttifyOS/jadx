@@ -28,8 +28,8 @@ check_env() {
 }
 
 install() {
-  wget https://github.com/skylot/jadx/releases/download/v1.4.3/jadx-1.4.3.zip -O $APM_TMP_DIR/jadx-1.4.3.zip
-  unzip $APM_TMP_DIR/jadx-1.4.3.zip -d $APM_PKG_INSTALL_DIR/jadx/
+  wget https://github.com/skylot/jadx/releases/download/v1.4.5/jadx-1.4.5.zip -O $APM_TMP_DIR/jadx-1.4.5.zip
+  unzip $APM_TMP_DIR/jadx-1.4.5.zip -d $APM_PKG_INSTALL_DIR/jadx/
 
   wget https://github.com/adoptium/temurin18-binaries/releases/download/jdk-18.0.2%2B9/OpenJDK18U-jre_x64_linux_hotspot_18.0.2_9.tar.gz -O $APM_TMP_DIR/OpenJDK18U-jre_x64_linux_hotspot_18.0.2_9.tar.gz
   tar xf $APM_TMP_DIR/OpenJDK18U-jre_x64_linux_hotspot_18.0.2_9.tar.gz -C $APM_PKG_INSTALL_DIR
